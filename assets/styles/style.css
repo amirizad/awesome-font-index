@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body{
+	background-color: #ccc;
+}
+.mycontainer{
+	width: 90%;
+	margin: 0 auto;
+}
+.form-control {
+	display: inline;
+	width: 200px;
+	margin: 10px;
+}
+#letters:last-child{
+	padding-right:10px;
+}
+#results{
+	width: 25px;
+	padding: 7px;
+	border-radius: 4px;
+	color: #000066;
+	font-weight: bold;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.nav{
+	margin-right: 1px;
+}
+.nav>li{
+	width: 30px;
+}
+.h-name{
+	margin: 5px 0;
+}
+.btn,.navbar-default,.navbar-default .navbar-header .navbar-brand,h1,h2,h3,h4,h5,h6{
+	font-family: 'Open Sans', sans-serif;
+}
+.navbar-default .navbar-header .navbar-toggle{
+	font-weight: 700;
+	font-size: 12px;
+	color: #222;
+	text-transform: uppercase;
+}
+.navbar-default .nav>li>a,.navbar-default .nav>li>a:focus{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 13px;
+	color: #222;
+}
+.navbar-default .navbar-header .navbar-brand{
+	color: #000066;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.navbar-default{
+	background-color: #fff;
+	border-color: rgba(34,34,34,.05);
+	transition: all .35s;
+}
+.text-primary {
+    color: #000066;
+}
+#items{
+  padding: 100px 0 20px;
+  min-height: 100%;
+  overflow: auto;
+}
+.f-item-box{
+  width: 120px;
+	height: 130px;
+  float: left;
+  margin: 25px;
+  text-align: center;
+}
+.f-item-box>h3{
+  font-weight: bold;
+  color: #960002;
+  font-size: smaller;	
+}
+.f-item-box>h4{
+  font-weight: bold;
+  color: #004B00;
+}
+.footer{
+  padding: 15px 0;
+  background-color: #000066;
+  color: #fff;
+  font-weight: bold;
+}
+@media (min-width: 768px){
+	.navbar-default {
+	  background-color: rgba(0,0,0,.3);
+	}
+  .navbar-default .navbar-header .navbar-brand{
+  	color: rgba(255,255,255,.7);
+  }
+  .navbar-default .nav>li>a,.navbar-default .nav>li>a:focus,.h-name{
+  color: rgba(255,255,255,.8);
+  }
+}
+@media (max-width: 1024px){
+	.nav>li {
+	    width: 23px;
+	}	
+}
+@media (max-width: 767px){
+	#results {
+  	background-color: rgba(0, 0, 0, 0.1);
+  	font-weight: normal;
+  }
+}    
+@media (max-width: 500px){
+	.form-control {
+		width: 110px;
+		margin: 10px 0 10px 5px;
+	}
+	.f-item-box {
+	  width: 105px;
+	}
+}
