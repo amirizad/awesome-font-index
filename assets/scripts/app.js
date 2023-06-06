@@ -34,7 +34,7 @@ function addFont(font, index){
 	var name = font.name;
 	var fontClass = font.class;
 	var classTxt = `fa fa-4x ${fontClass} text-primary`;
-	var $div = $('<div>').addClass('f-item-box').attr('data-font', name);
+	var $div = $('<div>').addClass('f-item-box').attr({'data-font': name, 'data-class': fontClass});
 	if (index){
 		$div.attr('id', index);
 	};
@@ -56,7 +56,7 @@ $(function(){
 	$('#search').on('keyup', function(){
 		if($('#search').val().length > 0){
 			$('#items div').addClass('hide').removeClass('result');
-			$('div[data-font*=' + $('#search').val() + ']').addClass('result').removeClass('hide');
+			$('div[data-font*=' + $('#search').val() + '], div[data-class*=' + $('#search').val() + ']').addClass('result').removeClass('hide');
 			$('#results').html($('.result').length);
 		}else{
 			$('#items div').removeClass('hide').addClass('result');
